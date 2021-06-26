@@ -1,0 +1,57 @@
+.setting {
+    position: fixed;
+    right: -155px;
+    top: 15rem;
+    z-index: 2;
+    // transition:  all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+    transition:  all 0.5s;
+    .setting-top {
+        background-color: $color-blue-4;
+        border-radius: $bd-2 0 0 $bd-2;
+        padding: $pd-14 $pd-10!important;
+        color: $color-white-3;
+
+        i {
+            margin-right: $mg-4;
+            font-size: $fs-2;
+        }
+        
+    }
+    .options {
+        background-color: $color-blue-4;
+        padding: 0 $pd-15;
+        height: 50px;
+        right: 0;
+        top: 30px;
+        color: $color-white-3;
+        
+        .options-wrapper {
+            margin: 0 $mg-5;
+            width: 50px;
+            height: 20px;
+            border-radius: 20px;
+            background-color:$color-blue-2;
+            position: relative;
+        }
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $color-white-3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition:  all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;;
+            &.move {
+                left: 30px;
+            }
+        }
+        
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    &.open{
+        right: 0;
+    }
+}

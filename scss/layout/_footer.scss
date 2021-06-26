@@ -1,0 +1,29 @@
+footer {
+    background-color: $color-blue-2;
+    padding-bottom: $pd-7;
+    img {
+        margin-bottom: $mg-4;
+    }
+    p {
+        padding: 0 $pd-11;
+        font-size: $fs-1;
+        color: $color-white-3;
+    }
+    a {
+        color: $color-white-3;
+        font-size: $fs-1;
+        font-weight: $fw-2;
+        padding: $pd-12 $pd-13;
+        transition: all .5s;
+        &:hover {
+            opacity: 0.75;
+            color: $color-white-3!important;
+            text-decoration: none;
+        }
+    }
+    @media screen and (max-width: map-get($breakpoints, "small-down")) {
+        .footer-responsive {
+            flex-flow: column-reverse;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+header {
+    &.dark{
+        background-color: $color-dark-3;
+        box-shadow: none;
+        .navbar-brand {
+            color: $color-blue-4!important;
+        }
+        .nav-item {
+            .nav-link {
+                color: $color-white-3!important;
+                &::after {
+                    background-color: $color-blue-4;
+                }
+                &.active {
+                    color: $color-blue-4!important;
+                }
+            }
+            &:hover {
+                .nav-link {
+                    color: $color-blue-4!important;
+                }
+            }
+        }
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("./../../images/white_hamburger.png");
+        }
+        
+    }
+    background-color: $color-white-1;
+    box-shadow: 0 2px 4px $color-white-2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    .navbar-brand {
+        color: $color-blue-2!important;
+        font-weight: $fw-3;
+        font-size: $fs-3;
+    }
+    .nav-item {
+        padding: $pd-1!important;
+        .nav-link {
+            padding: 0!important;
+            color: $color-blue-1!important;
+            font-weight: $fw-2;
+            font-size: $fs-2;
+            // line-height: 1.9rem;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: $bd-1;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $color-blue-2;
+                transition: all .4s;
+            }
+            &.active {
+                color: $color-blue-2!important;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+        &:hover {
+            .nav-link {
+                color: $color-blue-2!important;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: map-get($breakpoints, "medium-down")) {
+        .navbar-nav {
+            li {
+                text-align: center;
+            }
+        }
+    }
+    .navbar-dark {
+        .navbar-toggler {
+            border: none;
+            outline: none!important;
+        }
+        .navbar-toggler-icon {
+            background-image: url("./../../images/1024px-Hamburger_icon.svg.webp");
+        }
+    }
+}
+

@@ -1,0 +1,33 @@
+
+.btn-1 {
+   @include btn(2px solid $color-blue-2, $color-blue-2, transparent, $pd-3, $pd-4);
+   &:hover {
+    background: $color-blue-2;
+    color: $color-white-3;
+}
+}
+
+.btn-2 {
+    @include btn(none, $color-white-3, linear-gradient(120deg, #60a4f4, #2a73dd), 15px, 46px);
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.btn-3 {
+    box-shadow: 2px 2px 4px #e2ebfc,
+                -2px -2px 4px $color-white-3;
+    color: $color-blue-2;
+    border-radius: $bd-1 * 2;
+    border: none;
+    letter-spacing: $ls-2;
+    font-weight: $fw-2;
+    background-color: $color-white-1;
+    font-size: $fs-9;
+    padding: $pd-6 $pd-10;
+    // transition: all .10s;
+    &:hover {
+        cursor: pointer;
+        box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px $color-white-3;
+    } 
+}

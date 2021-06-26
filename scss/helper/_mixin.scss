@@ -1,0 +1,13 @@
+@mixin btn($border, $color, $bg, $px, $py) {
+    outline: none!important;
+    border: $border;
+    color: $color;
+    font-size: $fs-1;
+    font-weight: $fw-2;
+    box-shadow: 0 3px 6px $color-blue-3;
+    border-radius: $bd-2!important;
+    background: $bg;
+    padding: $px $py;
+    letter-spacing: $ls-2;
+    transition: all .3s;
+}

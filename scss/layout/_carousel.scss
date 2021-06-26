@@ -1,0 +1,80 @@
+.carousel {
+    padding: $pd-2 0;
+    background: url("./../../images/product-header-bg.jpg") top center / cover no-repeat;
+    &.dark {
+        background: url("./../../images/product-header-bg-dark.jpg") top center / cover no-repeat;
+        .left {
+            h1 {
+                color: $color-blue-4;
+            }
+            h4 {
+                color: $color-blue-4;
+            }
+            p {
+                color: $color-white-3;
+            }
+        }
+        .btn-1, .btn-2 {
+            box-shadow: none;
+        }
+    }
+    .left {
+        h1 {
+            font-size: $fs-4;
+            font-weight: $fw-3;
+            color: $color-blue-2;
+        }
+        h4 {
+            font-size: $fs-5;
+            font-weight: $fw-2;
+            color: $color-blue-1;
+            margin-bottom: $mg-1;
+            letter-spacing: $ls-1;
+        }
+        p {
+            font-size: $fs-2;
+            font-weight: $fw-1;
+            color: $color-dark-1;
+            margin-bottom: $mg-2;
+        }
+    }
+    .right {
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "large-down")) {
+        padding: $pd-8 0;
+        .right {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "medium-down")) {
+
+        .col-6.left {
+            flex: 100%;
+            max-width: 100%;
+            h1 {
+                font-size: $fs-8;
+            }
+        }
+        .right {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "small-down")) {
+        padding: $pd-5 0;
+    }
+    
+    @media screen and (max-width: map-get($breakpoints, "fix-bug")) {
+        .left {
+            .btn-2 {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

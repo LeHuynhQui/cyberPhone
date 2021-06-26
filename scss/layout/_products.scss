@@ -1,0 +1,84 @@
+.products {
+    padding: $pd-5 0;
+    background-color: $color-white-1;
+    &.dark {
+        background-color: $color-dark-2;
+        h1 {
+            color: $color-blue-4;
+        }
+        .col-4 {
+            .card {
+                box-shadow: none;
+                background-color: $color-dark-4;
+                img {
+                    box-shadow: none;
+                }
+                .body {
+                    h3,p {
+                        color: $color-blue-4;
+                    }
+                    .btn-3{
+                        box-shadow: none;
+                        color: $color-blue-4;
+                        border: 1px solid $color-blue-4;
+                        background-color: transparent;
+                        transition: all .5s;
+                        &:hover {
+                            cursor: pointer;
+                            box-shadow: none;
+                            background-color: $color-blue-4;
+                            color: $color-white-3;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        margin-bottom: $mg-3;
+        font-size: $fs-6;
+        font-weight: $fw-3;
+        color: $color-blue-1;
+        letter-spacing: $ls-1;
+    }
+    .col-4 {
+        padding: 0 15px;
+        .card {
+            box-shadow: 6px 6px 12px #e2ebfc,
+                         -6px -6px 12px #fff;
+            margin-bottom: $mg-1;
+            padding: $mg-1;
+            border: none;
+            background-color: $color-white-1;
+            img {
+                box-shadow: 6px 6px 12px #e2ebfc, 
+                            -6px -6px 12px #fff;
+                border-radius: $bd-2;
+            }
+            .body {
+                padding: $pd-9;
+                h3 {
+                    font-size: $fs-7;
+                    font-weight: $fw-3;
+                    color: $color-blue-1;
+                }
+                p {
+                    font-size: $fs-1;
+                    font-weight: $fw-1;
+                    color: $color-blue-1;
+                }
+                .star {
+                    color: $color-yellow-1;
+                }
+            }
+        }
+        @media screen and (max-width: map-get($breakpoints, "large-down")) {
+            flex: 0 50%;
+            max-width: 50%;
+        }
+        @media screen and (max-width: map-get($breakpoints, "medium-down")) {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}
