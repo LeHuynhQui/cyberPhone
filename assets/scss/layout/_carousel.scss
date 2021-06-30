@@ -1,8 +1,6 @@
 .carousel {
     padding: $pd-2 0;
-    background: url("./../../images/product-header-bg.jpg") top center / cover no-repeat;
     &.dark {
-        background: url("./../../images/product-header-bg-dark.jpg") top center / cover no-repeat;
         .left {
             h1 {
                 color: $color-blue-4;
