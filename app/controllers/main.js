@@ -4,6 +4,8 @@ function getProductList(params) {
     productService.getProductListAPI()
         .then(result => {
             renderProduct(result.data)
+            document.querySelector("#loading").classList.add("d-none");
+            document.querySelector(".main").classList.remove("d-none");
         })
         .catch(error => {
             console.log(error)
@@ -61,12 +63,14 @@ document.querySelector(".options-wrapper").addEventListener("click", e=>{
     document.querySelector(".footer-light").classList.add("d-none");
     document.querySelector(".footer-dark").classList.remove("d-none");
     document.querySelector(".carousel").style.background = "url('./../../assets/images/product-header-bg-dark.jpg') top center / cover no-repeat";
+    document.querySelector(".navbar-toggler-icon").style.backgroundImage = "url('./../../assets/images/white_hamburger.png')";
 
 
     if (!document.querySelector(".circle").classList.contains("move")) { 
         document.querySelector(".footer-light").classList.remove("d-none");
         document.querySelector(".footer-dark").classList.add("d-none");
         document.querySelector(".carousel").style.background = "url('./../../assets/images/product-header-bg.jpg') top center / cover no-repeat";
+        document.querySelector(".navbar-toggler-icon").style.backgroundImage = "url('./../../assets/images/1024px-Hamburger_icon.svg.webp')";
 
     }
 })

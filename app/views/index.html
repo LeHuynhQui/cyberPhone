@@ -22,101 +22,108 @@
         <link rel="stylesheet" href="./../../assets/css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-md text-dark navbar-dark container">
-                <!-- Brand -->
-                <a class="navbar-brand" href="/app/views/index.html">CyberPhone</a>
-
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/app/views/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+        <div id="loading">
+            <div  class="d-flex align-items-center justify-content-center" style="width: 100%; height: 100vh">
+                <img src="https://bestanimations.com/media/loading-gears/1895404887loading-gears-animation-10-2.gif" alt="">
+            </div>
+        </div>
+        <div  class="main d-none">
+            <header>
+                <nav class="navbar navbar-expand-md text-dark navbar-dark container">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="/app/views/index.html">CyberPhone</a>
+    
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon" style="background-image: url('./../../assets/images/1024px-Hamburger_icon.svg.webp');"></span>
+                    </button>
+    
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/app/views/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#shop">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+    
+            <section class="setting">
+                <div>
+                    <p class="position-relative setting-top">
+                        <i class="fa fa-cog"></i> 
+                        <span>Choose Mode</span>
+                        <div class="position-absolute d-flex options align-items-center">
+                            <p class="m-0">Light</p>
+                            <div class="options-wrapper">
+                                <div class="circle"></div>
+                            </div>
+                            <p class="m-0">Dark</p>
+                        </div>
+                    </p>
+    
+                </div>
+    
+            </section>
+    
+            <section class="carousel" style="background: url('./../../assets/images/product-header-bg.jpg') top center / cover no-repeat">
+                <div class="carousel-dark"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 left d-flex justify-content-center flex-column">
+                            <h1>CyberPhone</h1>
+                            <h4>Best Smartphone of 2021!</h4>
+                            <p>Cras tortor mi, lobortis quis ornare in, varius scelerisque urna. Vivamus imperdiet dolor nec odio convallis consequat.</p>
+                            <div class="d-flex flex-wrap">
+                                <button class="btn-1 mr-2"><i class="fas fa-info-circle"></i> More Info</button>
+                                <button class="btn-2"><i class="fas fa-shopping-cart"></i> Shop</button>
+                            </div>
+                        </div>
+                        <div class="col-6 right">
+                            <img src="./../../assets/images/product-header2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <section id="shop" class="products">
+                <div class="container">
+                    <h1 class="text-center">-Featured Products-</h1>
+                    <div class="row"></div>
+                </div>
+    
+            </section>
+    
+            <footer>
+                <img class="footer-light" src="./../../assets/images/angle-up-light.svg" alt="">
+                <img class="footer-dark d-none" src="./../../assets/images/angle-up-dark.png" alt="">
+                <div class="container d-flex justify-content-between align-items-center footer-responsive">
+                    <p><i class="far fa-copyright"></i> 2021. Remade by <a class="p-0" href="https://huynhqui.vercel.app/" target="_blank"><u>huynhqui</u></a></p>
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-
-        <section class="setting">
-            <div>
-                <p class="position-relative setting-top">
-                    <i class="fa fa-cog"></i> 
-                    <span>Choose Mode</span>
-                    <div class="position-absolute d-flex options align-items-center">
-                        <p class="m-0">Light</p>
-                        <div class="options-wrapper">
-                            <div class="circle"></div>
-                        </div>
-                        <p class="m-0">Dark</p>
-                    </div>
-                </p>
-
-            </div>
-
-        </section>
-
-        <section class="carousel" style="background: url('./../../assets/images/product-header-bg.jpg') top center / cover no-repeat">
-            <div class="carousel-dark"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 left d-flex justify-content-center flex-column">
-                        <h1>CyberPhone</h1>
-                        <h4>Best Smartphone of 2021!</h4>
-                        <p>Cras tortor mi, lobortis quis ornare in, varius scelerisque urna. Vivamus imperdiet dolor nec odio convallis consequat.</p>
-                        <div class="d-flex flex-wrap">
-                            <button class="btn-1 mr-2"><i class="fas fa-info-circle"></i> More Info</button>
-                            <button class="btn-2"><i class="fas fa-shopping-cart"></i> Shop</button>
-                        </div>
-                    </div>
-                    <div class="col-6 right">
-                        <img src="./../../assets/images/product-header2.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="products">
-            <div class="container">
-                <h1 class="text-center">-Featured Products-</h1>
-                <div class="row"></div>
-            </div>
-
-        </section>
-
-        <footer>
-            <img class="footer-light" src="./../../assets/images/angle-up-light.svg" alt="">
-            <img class="footer-dark d-none" src="./../../assets/images/angle-up-dark.png" alt="">
-            <div class="container d-flex justify-content-between align-items-center footer-responsive">
-                <p><i class="far fa-copyright"></i> 2021. Remade by <a class="p-0" href="https://huynhqui.vercel.app/" target="_blank"><u>huynhqui</u></a></p>
-                <ul class="list-unstyled d-flex align-items-center">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </footer>
-
+            </footer>
+    
+        </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

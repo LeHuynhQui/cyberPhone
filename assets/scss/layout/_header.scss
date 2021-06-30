@@ -21,9 +21,9 @@ header {
                 }
             }
         }
-        .navbar-dark .navbar-toggler-icon {
-            background-image: url("./../../images/white_hamburger.png");
-        }
+        // .navbar-dark .navbar-toggler-icon {
+        //     background-image: url("./../../images/white_hamburger.png");
+        // }
         
     }
     background-color: $color-white-1;
@@ -85,9 +85,6 @@ header {
         .navbar-toggler {
             border: none;
             outline: none!important;
-        }
-        .navbar-toggler-icon {
-            background-image: url("./../../images/1024px-Hamburger_icon.svg.webp");
         }
     }
 }

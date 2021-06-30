@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
@@ -36,10 +40,6 @@ header.dark .nav-item .nav-link.active {
 
 header.dark .nav-item:hover .nav-link {
   color: #2196f3 !important;
-}
-
-header.dark .navbar-dark .navbar-toggler-icon {
-  background-image: url("./../../images/white_hamburger.png");
 }
 
 header .navbar-brand {
@@ -99,17 +99,8 @@ header .navbar-dark .navbar-toggler {
   outline: none !important;
 }
 
-header .navbar-dark .navbar-toggler-icon {
-  background-image: url("./../../images/1024px-Hamburger_icon.svg.webp");
-}
-
 .carousel {
   padding: 225px 0;
-  background: url("./../../images/product-header-bg.jpg") top center/cover no-repeat;
-}
-
-.carousel.dark {
-  background: url("./../../images/product-header-bg-dark.jpg") top center/cover no-repeat;
 }
 
 .carousel.dark .left h1 {
